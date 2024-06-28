@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>tailwind petroil</title>
+  </head>
+  <body>
+    <!-- =========== header part start ============== -->
+
+    <header
+      class="hidden sm:block py-4 bg-[#282828] border-b-2 border-solid border-[#FFB800]"
+    >
+      <div class="container mx-auto flex justify-between">
+        <ul class="list-none flex gap-7.5">
+          <li>
+            <a href="#" class="text-[#FFFFFF] font-poppins text-xs"
+              ><i class="fa-regular fa-envelope"></i>
+              <span>mail@yourcompany.com</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-[#FFFFFF] font-poppins text-xs"
+              ><i class="fa-solid fa-phone"></i>
+              <span>+896 120 5889 (Toll free)</span></a
+            >
+          </li>
+        </ul>
+        <ul class="list-none flex gap-5.5">
+          <li>
+            <a href="#" class="text-[#FFFFFF]"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-[#FFFFFF]"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-[#FFFFFF]"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-[#FFFFFF]"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- =========== header part end ============== -->
+
+    <!-- =========== menu part start ============== -->
+    <nav
+      class="px-3 md:px-0 py-7.5 bg-[#F40404] flex justify-between items-center relative"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="lgog">
+          <a href="#"><img src="img/Logo.png" alt="Logo" /></a>
+        </div>
+        <div
+          class="hidden md:block md:flex gap-x-8 lg:gap-x-72px text-[#FFFFFF]"
+        >
+          <ul
+            class="flex font-poppins justify-center gap-x-8 lg:gap-x-12 font-poppins font-semibold text-16px"
+          >
+            <li><a href="#" class="hover:text-[#FFB800]">Home</a></li>
+            <li><a href="#" class="hover:text-[#FFB800]">About</a></li>
+            <li><a href="#" class="hover:text-[#FFB800]">Service</a></li>
+            <li><a href="#" class="hover:text-[#FFB800]">Gelery</a></li>
+            <li><a href="#" class="hover:text-[#FFB800]">Blog</a></li>
+          </ul>
+          <div class="btn">
+            <a
+              href="#"
+              class="py-3.5 px-8 border-2 border-solid border-white font-poppins font-semibold text-16px hover:border-gray-500 transition-all"
+              >CONTACT</a
+            >
+          </div>
+        </div>
+        <div id="resposive_btn" class="md:hidden">
+          <button class="text-2xl text-[#FFFFFF]">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <!-- <div id="responsive_nav" class=" md:hidden fixed inset-0 bg-white z-20 p-3 w-full">
+          <div id="responsive_menu" class="flex justify-between items-center">
+            <div class="lgog">
+              <a href="#"><img src="img/Logo2.png" alt="Logo" /></a>
+            </div>
+            <div id="resposive_btn" class="md:hidden">
+              <button class="text-2xl text-[#F40404]">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </nav>
+    <!-- =========== menu part end ============== -->
+
+    <!-- =========== banner part start ============== -->
+    <section class="relative">
+      <div
+        class="overlay absolute top-0 left-0 bg-shadow w-full h-full z-1"
+      ></div>
+      <button
+        type="button"
+        class="slick-prev absolute z-10 top-1/2 left-3 bg-[#FFFFFF] w-6 lg:w-10 h-8 rounded-3xl text-[#F40404] invisible md:visible"
+      >
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button
+        type="button"
+        class="slick-next absolute z-10 top-1/2 right-3 bg-[#FFFFFF] w-6 lg:w-10 h-8 rounded-3xl text-[#F40404] invisible md:visible"
+      >
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <div class="slider_banner">
+        <div class="banner_img">
+          <img src="img/banner.png" class="w-full" alt="" />
+        </div>
+        <div class="banner_img">
+          <img src="img/banner.png" class="w-full" alt="" />
+        </div>
+      </div>
+      <div
+        class="container px-4 md:px-0 mx-auto absolute top-2/4 left-2/4 translate-x-50% translate-y-50% z-1"
+      >
+        <h1
+          class="font-poppins font-bold text-white text-3xl lg:text-64px w-full lg:w-842px lg:leading-64px mb-8"
+        >
+          We exist since 1975 on the oil and gas industry.
+        </h1>
+        <a
+          href="#"
+          class="font-poppins md:font-semibold text-white md:text-16px md:py-3.5 md:px-10 bg-[#F40404]"
+          >LEARN MORE</a
+        >
+      </div>
+    </section>
+    <!-- =========== banner part end ============== -->
+
+    <!-- =========== imges part start ============== -->
+    <section class="">
+      <div class="img_slider">
+        <div class=""><img src="img/img (1).png" alt="" /></div>
+        <div class=""><img src="img/img (2).png" alt="" /></div>
+        <div class=""><img src="img/img (3).png" alt="" /></div>
+        <div class=""><img src="img/img (4).png" alt="" /></div>
+        <div class=""><img src="img/img (1).png" alt="" /></div>
+        <div class=""><img src="img/img (2).png" alt="" /></div>
+        <div class=""><img src="img/img (3).png" alt="" /></div>
+        <div class=""><img src="img/img (4).png" alt="" /></div>
+      </div>
+      <div class="xl:flex xl:items-center mt-7">
+        <div class="xl:w-2/4 flex flex-col items-center mb-3">
+          <h2
+            class="font-poppins text-4xl lg:text-64px lg:leading-64px font-bold text-black"
+          >
+            Our Services
+          </h2>
+          <p
+            class="w-2/4 mx-auto text-center xl:text-start xl:mx-0 lg:w-405px font-poppins text-sm md:text-16px font-medium text-[#6c6c6c]"
+          >
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="xl:w-2/4 relative">
+          <div
+            class="overlay absolute top-0 left-0 bg-shadow w-full h-full"
+          ></div>
+          <img src="img/service_img.png" alt="" />
+          <div
+            class="absolute top-1/2 translate-y-50% left-1/2 translate-x-50% md:left-28 md:left-28 md:translate-x-0"
+          >
+            <h2
+              class="font-poppins font-bold text-xl md:text-3xl font-poppins font-bold text-[#FFFFFF] mb-3 md:mb-5"
+            >
+              Modern natural oil and gas refineries.
+            </h2>
+            <a
+              href="#"
+              class="px-3 py-2 md:py-3.5 md:px-8 font-poppins font-semibold text-16px text-[#FFFFFF] bg-[#F40404]"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="xl:flex">
+        <div class="xl:w-2/4 relative">
+          <div
+            class="overlay absolute top-0 left-0 bg-shadow w-full h-full"
+          ></div>
+          <img src="img/service_img.png" alt="" />
+          <div
+            class="absolute top-1/2 translate-y-50% left-1/2 translate-x-50% md:left-28 md:left-28 md:translate-x-0"
+          >
+            <h3
+              class="font-poppins font-bold text-xl md:text-3xl font-poppins font-bold text-[#FFFFFF] mb-3 md:mb-5"
+            >
+              Modern natural oil and gas refineries.
+            </h3>
+            <a
+              href="#"
+              class="px-3 py-2 md:py-3.5 md:px-8 font-poppins font-semibold text-16px text-[#FFFFFF] bg-[#F40404]"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="xl:w-2/4 relative">
+          <div
+            class="overlay absolute top-0 left-0 bg-shadow w-full h-full"
+          ></div>
+          <img src="img/service_img.png" alt="" />
+          <div
+            class="absolute top-1/2 translate-y-50% left-1/2 translate-x-50% md:left-28 md:left-28 md:translate-x-0"
+          >
+            <h3
+              class="font-poppins font-bold text-xl md:text-3xl font-poppins font-bold text-[#FFFFFF] mb-3 md:mb-5"
+            >
+              Modern natural oil and gas refineries.
+            </h3>
+            <a
+              href="#"
+              class="px-3 py-2 md:py-3.5 md:px-8 font-poppins font-semibold text-16px text-[#FFFFFF] bg-[#F40404]"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== imges part end ============== -->
+
+    <!-- =========== learn more part start ============== -->
+    <section class="py-10 md:py-136px">
+      <div class="container mx-auto">
+        <div class="flex justify-center">
+          <div
+            class="bg-[#F40404] flex p-3 justify-center items-center lg:px-75px w-413px"
+          >
+            <h3
+              class="font-poppins font-bold lg:text-3xl text-[#FFFFFF] w-full"
+            >
+              Learn more about our company
+            </h3>
+          </div>
+          <div class="">
+            <img
+              src="img/learnmore.png"
+              class="w-full bg-cover bg-no-repeat"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== learn more part end ============== -->
+    <!-- =========== logo part start ============== -->
+    <section class="">
+      <div class="container mx-auto flex justify-between">
+        <div class=""><img src="img/Logo1.png" alt="" /></div>
+        <div class=""><img src="img/Logo21.png" alt="" /></div>
+        <div class=""><img src="img/Logo1.png" alt="" /></div>
+        <div class=""><img src="img/Logo21.png" alt="" /></div>
+      </div>
+    </section>
+    <!-- =========== logo part end ============== -->
+
+    <!-- =========== lorem part start ============== -->
+    <section class="pt-28 pb-40">
+      <div
+        class="container mx-auto flex flex-col items-center gap-5 lg:flex-row justify-center"
+      >
+        <div class="flex md:justify-between flex-col md:flex-row gap-5">
+          <div
+            class="w-339px h-410px pb-14 px-11 pt-75px bg-[url('img/lorem_pic.png')] bg-cover bg-no-repeat relative z-1"
+          >
+            <div
+              class="overlay absolute top-0 left-0 w-full h-full bg-shadow z-1/2"
+            ></div>
+            <h2 class="font-poppins font-bold text-2xl text-[#FFFFFF]">
+              lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+              eiusmod.
+            </h2>
+            <div class="mt-14">
+              <a
+                href="#"
+                class="py-2.5 px-5 z-1 font-poppins font-semibold text-sm text-[#FFFFFF] bg-lightWhite"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-339px h-410px pb-14 px-11 pt-75px bg-[url('img/lorem_pic.png')] bg-cover bg-no-repeat relative z-1"
+          >
+            <div
+              class="overlay absolute top-0 left-0 w-full h-full bg-shadow z-1/2"
+            ></div>
+            <h2 class="font-poppins font-bold text-2xl text-[#FFFFFF]">
+              lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+              eiusmod.
+            </h2>
+            <div class="mt-14">
+              <a
+                href="#"
+                class="py-2.5 px-5 z-1 font-poppins font-semibold text-sm text-[#FFFFFF] bg-lightWhite"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="flex md:justify-between flex-col md:flex-row gap-5">
+          <div
+            class="w-339px h-410px pb-14 px-11 pt-75px bg-[url('img/lorem_pic.png')] bg-cover bg-no-repeat relative z-1"
+          >
+            <div
+              class="overlay absolute top-0 left-0 w-full h-full bg-shadow z-1/2"
+            ></div>
+            <h2 class="font-poppins font-bold text-2xl text-[#FFFFFF]">
+              lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+              eiusmod.
+            </h2>
+            <div class="mt-14">
+              <a
+                href="#"
+                class="py-2.5 px-5 z-1 font-poppins font-semibold text-sm text-[#FFFFFF] bg-lightWhite"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-339px h-410px pb-14 px-11 pt-75px bg-[url('img/lorem_pic.png')] bg-cover bg-no-repeat relative z-1"
+          >
+            <div
+              class="overlay absolute top-0 left-0 w-full h-full bg-shadow z-1/2"
+            ></div>
+            <h2 class="font-poppins font-bold text-2xl text-[#FFFFFF]">
+              lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+              eiusmod.
+            </h2>
+            <div class="mt-14">
+              <a
+                href="#"
+                class="py-2.5 px-5 z-1 font-poppins font-semibold text-sm text-[#FFFFFF] bg-lightWhite"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- =========== lorem part end ============== -->
+
+    <!-- =========== map part start ============== -->
+    <section class="">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58319.41555113626!2d90.3580150941574!3d23.997066960223897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755dafdd8aa72a1%3A0xe3a23793cb030fdb!2sGazipur!5e0!3m2!1sen!2sbd!4v1719525188319!5m2!1sen!2sbd"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="w-full"
+      ></iframe>
+      <div class="bg-[#F40404] py-11">
+        <div class="container mx-auto">
+          <div class="flex justify-between items-center">
+            <h2 class="font-poppins font-bold text-3xl text-[#FFFFFF]">
+              Want to join as member branch in your area?
+            </h2>
+            <a
+              href="#"
+              class="py-2.5 px-5 z-1 font-poppins font-semibold text-sm text-[#FFFFFF] bg-transparent border-2 border-solid border-white"
+              >CONTACT</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== map part end ============== -->
+    <!-- =========== footer part start ============== -->
+    <!-- <section class="pt-36 pb-44 bg-[#1F1F1F]">
+      <div class="container mx-auto flex justify-between">
+        <div class="">
+          <div class="img"><img src="img/Logo.png" alt="" /></div>
+          <ul class="font-poppins font-regular text-16px text-[#FFFFFF] mt-8">
+            <li class="mb-3"><a href="#">mail@yourcompany.com</a></li>
+            <li class="mb-3"><a href="#">+896 120 5889 (Toll free)</a></li>
+            <li class="mb-3">
+              <a href="">101 Baker Street, New York, USA, 12345</a>
+            </li>
+            <li class="mb-3"><a href=""></a></li>
+          </ul>
+          <ul class="list-none flex gap-5.5 mt-8">
+            <li
+              class="w-7 h-7 bg-[#F40404] text-[#FFFFFF] flex justify-center items-center rounded-full"
+            >
+              <a href="#" class="text-[#FFFFFF]"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li
+              class="w-7 h-7 bg-[#F40404] text-[#FFFFFF] flex justify-center items-center rounded-full"
+            >
+              <a href="#" class="text-[#FFFFFF]"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li
+              class="w-7 h-7 bg-[#F40404] text-[#FFFFFF] flex justify-center items-center rounded-full"
+            >
+              <a href="#" class="text-[#FFFFFF]"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li
+              class="w-7 h-7 bg-[#F40404] text-[#FFFFFF] flex justify-center items-center rounded-full"
+            >
+              <a href="#" class="text-[#FFFFFF]"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="font-poppins font-bold text-16px text-[#FFFFFF]"
+                >Company</a
+              >
+            </li>
+            <li class="mt-5 mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                >Home</a
+              >
+            </li>
+            <li class="mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                >About</a
+              >
+            </li>
+            <li class="mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                >Services</a
+              >
+            </li>
+            <li class="mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="font-poppins font-bold text-16px text-[#FFFFFF]"
+                >Company</a
+              >
+            </li>
+            <li class="mt-5 mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                >Home</a
+              >
+            </li>
+            <li class="mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                >About</a
+              >
+            </li>
+            <li class="mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                >Services</a
+              >
+            </li>
+            <li class="mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="font-poppins font-bold text-16px text-[#FFFFFF]"
+                >Certificate</a
+              >
+            </li>
+            <li class="mt-5 mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                ><img src="img/Cert1.png" alt=""
+              /></a>
+            </li>
+            <li class="mb-3.5">
+              <a
+                href="#"
+                class="font-poppins font-regular text-16px text-[#FFFFFF]"
+                ><img src="img/Cert1.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+    <!-- =========== footer part end ============== -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
