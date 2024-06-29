@@ -72,3 +72,8 @@ $(".img_slider").slick({
   arrows: false,
   autoplaySpeed: 2000,
 });
+
+let menuNav = document.getElementById("responsive_nav");
+function handleMenu() {
+  menuNav.classList.toggle("hidden");
+}
